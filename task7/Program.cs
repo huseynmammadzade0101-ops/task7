@@ -5,7 +5,7 @@ using System.Runtime.Intrinsics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Operator_overload7
+namespace task7
 {
     public class Vector
     {
@@ -29,28 +29,35 @@ Z : {Z}";
             }
             return false;
         }
+        
 
         public static bool operator >(Vector p1, Vector p2)
         {
             return p1.X > p2.X && p1.Y > p2.Y && p1.Z > p2.Z;
         }
+        
         public static bool operator <(Vector p1, Vector p2)
         {
             return p1.X < p2.X && p1.Y < p2.Y && p1.Z < p2.Z;
         }
+        
         public static bool operator >=(Vector p1, Vector p2)
         {
             return p1.X >= p2.X && p1.Y >= p2.Y && p1.Z >= p2.Z;
         }
+        
         public static bool operator <=(Vector p1, Vector p2)
         {
             return p1.X <= p2.X && p1.Y <= p2.Y && p1.Z <= p2.Z;
         }
+        
         public static bool operator ==(Vector p1, Vector p2)
         {
             return p1.X == p2.X && p1.Y == p2.Y && p1.Z == p2.Z;
         }
+        
         public static bool operator !=(Vector p1, Vector p2)
+            
         {
             return p1.X != p2.X && p1.Y != p2.Y && p1.Z != p2.Z;
         }
@@ -65,6 +72,7 @@ Z : {Z}";
             };
             return vector;
         }
+        
         public static Vector operator -(Vector v1, Vector v2)
         {
             Vector vector = new Vector()
